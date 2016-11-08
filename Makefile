@@ -1,6 +1,6 @@
 CXX=g++
 
-all: main.o stuff.o bin
+all: bin obj main.o stuff.o
 	$(CXX) -o "bin/HelloWorld" "obj/main.o" "obj/stuff.o"
 
 main.o:
@@ -14,3 +14,6 @@ run:
 
 bin:
 	mkdir ./bin
+
+obj:
+	mkdir ./obj
